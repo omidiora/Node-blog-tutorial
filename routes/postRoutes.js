@@ -27,8 +27,8 @@ router.get('/' , async(req ,res)=>{
 router.get("/:id" , async(req , res)=>{
     const post =await Post.findById(req.params.id);
     res.json(post);
-
-
 })
+
+
 
 module.exports=router;
